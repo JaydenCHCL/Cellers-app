@@ -1,4 +1,4 @@
-package com.cellers.JavaDay3;
+package com.cellers.javaDay3;
 
 public class Vehicle {
 
