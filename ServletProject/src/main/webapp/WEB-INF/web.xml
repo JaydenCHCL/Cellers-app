@@ -1,0 +1,64 @@
+<!DOCTYPE web-app PUBLIC
+"-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+"http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+	<display-name>Archetype Created Web Application</display-name>
+
+	<servlet>
+		<servlet-name>xyz</servlet-name>
+		<servlet-class>com.cellers.serv.Login</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>abc</servlet-name>
+		<servlet-class>com.cellers.serv.WelcomeServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>Emp-Insert</servlet-name>
+		<servlet-class>com.cellers.employeeServletAssignment.Insert</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>Emp-Select</servlet-name>
+		<servlet-class>com.cellers.employeeServletAssignment.Select</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>Emp-Update</servlet-name>
+		<servlet-class>com.cellers.employeeServletAssignment.Update</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>Emp-Delete</servlet-name>
+		<servlet-class>com.cellers.employeeServletAssignment.Delete</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Emp-Insert</servlet-name>
+		<url-pattern>/Insert</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>Emp-Select</servlet-name>
+		<url-pattern>/Select</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>Emp-Update</servlet-name>
+		<url-pattern>/Update</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>Emp-Delete</servlet-name>
+		<url-pattern>/Delete</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>xyz</servlet-name>
+		<url-pattern>/servlet1</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>abc</servlet-name>
+		<url-pattern>/servlet2</url-pattern>
+	</servlet-mapping>
+
+	<welcome-file-list>
+		<welcome-file>Welcome.jsp</welcome-file>
+	</welcome-file-list>
+
+
+</web-app>

@@ -1,4 +1,4 @@
-package assignments;
+package com.cellers.assignments;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
