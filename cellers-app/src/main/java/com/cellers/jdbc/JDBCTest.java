@@ -11,8 +11,8 @@ public class JDBCTest {
 		Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/sept2022", "root", "root");
 		// Create a Statement
 		Statement st = con.createStatement();
-		//st.execute("create table emp(eno numeric(10),ename varchar(50),esal numeric(10),primary key(eno))");
-		st.execute("insert into 'emp' values(100, 'Rebecca', 95000)");
+		st.execute("create table products(prdNum numeric(10),prdName varchar(25),prdPrice numeric(10),primary key(prdNum))");
+		/*st.execute("insert into 'emp' values(100, 'Rebecca', 95000)");
 		st.execute("insert into 'emp' values(101, 'Jayden', 112345)");
 		st.execute("insert into 'emp' values(102, 'Jethon', 75000)");
 		st.execute("insert into 'emp' values(103, 'Adam', 80000)");
@@ -27,6 +27,6 @@ public class JDBCTest {
 			System.out.println("Emp No " + rs.getInt("eno"));
 			System.out.println("Emp Name " + rs.getString(2));
 			System.out.println("Emp Salary " + rs.getInt("esal"));
-		}
+		}*/
 	}
 }
